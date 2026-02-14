@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Another Simple Site Blocker",
+  "name": "Yet Another Simple Site Blocker",
   "version": "1.0",
   "description": "Yet another simple tool for blocking websites by domain or pages by keyword",
   "icons": {
@@ -27,5 +27,13 @@
   },
   "web_accessible_resources": ["blocked.html"],
   "background": { "scripts": ["background.js"] },
-  "incognito": "spanning"
+  "incognito": "spanning",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{d9273a02-f778-4ae4-bce1-62105cd332b8}",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  }
 }
