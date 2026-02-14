@@ -1,0 +1,103 @@
+/**************************/
+/*      BLOCKED PAGE      */
+/**************************/
+
+#blocked-body {
+  background-color: #1e1e2e; /* Catppuccin Mocha Base */
+  color: #cdd6f4; /* Catppuccin Mocha Text */
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+#viewport {
+  position: fixed;
+  inset: 5%;
+  padding-top: 10%;
+}
+
+#blocked-title {
+  animation-duration: 1s;
+  animation-name: slide-in;
+  color: #f38ba8; /* Catppuccin Mocha Red */
+  font-size: 64px;
+}
+
+#blocked-text {
+  animation: 2.5s delay1;
+  font-size: 16px;
+}
+
+@keyframes slide-in {
+  from {
+    translate: 0 5vh;
+    opacity: 0;
+  }
+  to {
+    translate: 0 0;
+    opacity: 1;
+  }
+}
+
+@keyframes delay1 {
+  0% {
+    translate: 0 10vw;
+    opacity: 0;
+  }
+  60% {
+    translate: 0 5vw;
+    opacity: 0;
+  }
+  100% {
+    translate: 0 0vw;
+    opacity: 1;
+  }
+}
+
+/**************************/
+/*      OPTIONS PAGE      */
+/**************************/
+
+#options-body {
+  background-color: #1e1e2e; /* Catppuccin Mocha Base */
+  color: #cdd6f4; /* Catppuccin Mocha Text */
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+#viewport-options {
+  position: fixed;
+  inset: 5%;
+}
+
+p {
+  font-size: 16px;
+}
+
+textarea {
+  background-color: #11111b; /* Catppuccin Mocha Crust */
+  color: #cdd6f4; /* Catppuccin Mocha Text */
+  font-family: "Noto Sans Mono", monospace;
+  height: 150px;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+#saveBtn {
+  margin-top: 2%;
+  background: #11111b; /* Catppuccin Mocha Crust */
+  border: none;
+  border-radius: 8px;
+  color: #cdd6f4;
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.2s;
+  width: 25%;
+}
+
+#saveBtn:hover {
+  background: #313244; /* Catppuccin Mocha Surface 0 */
+}

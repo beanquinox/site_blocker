@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Site Blocker Settings</title>
+    <link rel="icon" type="image/x-icon" href="images/icon_16.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body id="options-body">
+    <div id="viewport-options">
+      <h2>Blocked Domains</h3>
+      <p><small>Enter one per line (e.g., domain.xyz)</small></p>
+      <textarea id="domainList" placeholder="reddit.com"></textarea>
+      <h2>Blocked Keywords</h3>
+      <p><small>Enter one per line (e.g., spiders)</small></p>
+      <textarea id="keywordList" placeholder="giant spiders"></textarea>
+      <h2>Allowed Pages (Exceptions)</h3>
+      <p><small>Specific pages to allow (e.g., domain.xyz/allowedpage)</small></p>
+      <textarea id="allowList" placeholder="domain.xyz/page"></textarea>
+      </br>
+      <button id="saveBtn">Save & Apply</button>
+    </div>
+  </body>
+  <script src="options.js"></script>
+</html>
